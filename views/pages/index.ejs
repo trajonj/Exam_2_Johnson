@@ -6,7 +6,7 @@
 <body class="container">
 
 <header>
-    <p>Personal Data: </p>
+    <h1>Personal Data: </h1>
 </header>
 
 
@@ -15,15 +15,15 @@
     <div class="col-sm-8">
         <div class="jumbotron">
         <% if (locals.users) { %>
-            <p>First Name: <%= locals.users.results[0].name.first %></p>
-            <p>Last Name: <%= locals.users.results[0].name.last %></p>
-            <p>Street Number: <%= locals.users.results[0].location.street.number %></p>
-            <p>Street Name: <%= locals.users.results[0].location.street.name %></p>
-            <p>Zip Code: <%= locals.users.results[0].location.postcode %></p>
-            <p>City: <%= locals.users.results[0].location.city %></p>
-            <p>State: <%= locals.users.results[0].location.state %></p>
-            <p>Country: <%= locals.users.results[0].location.country %></p>
-            <p>Local time for the person: <%= locals.users.results[0].location.timezone.offset %></p>
+            <p><strong>First Name:</strong> <%= locals.users.results[0].name.first %></p>
+            <p><strong>Last Name:</strong> <%= locals.users.results[0].name.last %></p>
+            <p><strong>Street Number:</strong> <%= locals.users.results[0].location.street.number %></p>
+            <p><strong>Street Name:</strong> <%= locals.users.results[0].location.street.name %></p>
+            <p><strong>Zip Code:</strong> <%= locals.users.results[0].location.postcode %></p>
+            <p><strong>City:</strong> <%= locals.users.results[0].location.city %></p>
+            <p><strong>State:</strong> <%= locals.users.results[0].location.state %></p>
+            <p><strong>Country:</strong> <%= locals.users.results[0].location.country %></p>
+            <p><strong>Local time for the person:</strong> <%= locals.users.results[0].location.timezone.offset %></p>
             <% } %>
         </div>
     </div>
