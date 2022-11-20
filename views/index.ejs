@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p>Code by Trajon Johnson</p>
+</head>
+<body class="container">
+
+<header>
+    <p>Personal Data: </p>
+</header>
+
+
+<main>
+<div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            <p>Personal Data: </p>
+            <p>First Name: </p> 
+            <p><%= locals.users.results[0].first %></p>
+            <p>Last Name:</p> 
+            <p><%= locals.users.results[0].last %></p>
+            <p>Street Number: </p>
+            <p><%= locals.users.results[0].number %></p>
+            <p>Street Name: </p>
+            <p><%= locals.users.results[0].name %></p>
+            <p>Zip Code: </p>
+            <p><%= locals.users.results[0].postcode %></p>
+            <p>City: </p>
+            <p><%= locals.users.results[0].city %></p>
+            <p>State: </p>
+            <p><%= locals.users.results[0].state %></p>
+            <p>Country: </p>
+            <p><%= locals.users.results[0].country %></p>
+            <p>Local time for the person: </p>
+            <p><%= locals.users.results[0].offset %></p>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="well">
+            <h3>
+                Personal Information from Users.
+            </h3>
+        </div>
+    </div>
+
+</div>
+</main>
+
+<footer>
+    <p>This is the footer.</p>
+</footer>
+
+</body>
+</html>
