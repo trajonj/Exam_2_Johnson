@@ -15,24 +15,15 @@
     <div class="col-sm-8">
         <div class="jumbotron">
         <% if (locals.users) { %>
-            <p>First Name: </p> 
-            <p><%= locals.users.results[0].name.first %></p>
-            <p>Last Name:</p> 
-            <p><%= locals.users.results[0].name.last %></p>
-            <p>Street Number: </p>
-            <p><%= locals.users.results[0].location.street.number %></p>
-            <p>Street Name: </p>
-            <p><%= locals.users.results[0].location.street.name %></p>
-            <p>Zip Code: </p>
-            <p><%= locals.users.results[0].location.postcode %></p>
-            <p>City: </p>
-            <p><%= locals.users.results[0].location.city %></p>
-            <p>State: </p>
-            <p><%= locals.users.results[0].location.state %></p>
-            <p>Country: </p>
-            <p><%= locals.users.results[0].location.country %></p>
-            <p>Local time for the person: </p>
-            <p><%= locals.users.results[0].location.timezone.offset %></p>
+            <p>First Name: <%= locals.users.results[0].name.first %></p>
+            <p>Last Name: <%= locals.users.results[0].name.last %></p>
+            <p>Street Number: <%= locals.users.results[0].location.street.number %></p>
+            <p>Street Name: <%= locals.users.results[0].location.street.name %></p>
+            <p>Zip Code: <%= locals.users.results[0].location.postcode %></p>
+            <p>City: <%= locals.users.results[0].location.city %></p>
+            <p>State: <%= locals.users.results[0].location.state %></p>
+            <p>Country: <%= locals.users.results[0].location.country %></p>
+            <p>Local time for the person: <%= locals.users.results[0].location.timezone.offset %></p>
             <% } %>
         </div>
     </div>
